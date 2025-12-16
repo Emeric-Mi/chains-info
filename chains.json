@@ -5,7 +5,7 @@
     "chain_id": 1,
     "native_currency": "ETH",
     "rpc_url": "https://eth-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}",
-    "rpc_url_fallback": "https://mainnet.infura.io/v3/${INFURA_KEY}",
+    "rpc_url_fallback": "https://cloudflare-eth.com",
     "explorer_url": "https://etherscan.io",
     "explorer_api": "https://api.etherscan.io/api",
     "explorer_api_v2": "https://api.etherscan.io/v2/api"
@@ -16,7 +16,7 @@
     "chain_id": 11155111,
     "native_currency": "ETH",
     "rpc_url": "https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_KEY}",
-    "rpc_url_fallback": "https://sepolia.infura.io/v3/${INFURA_KEY}",
+    "rpc_url_fallback": "https://rpc.sepolia.org",
     "explorer_url": "https://sepolia.etherscan.io",
     "explorer_api": "https://api-sepolia.etherscan.io/api"
   },
@@ -26,6 +26,7 @@
     "chain_id": 8453,
     "native_currency": "ETH",
     "rpc_url": "https://mainnet.base.org",
+    "rpc_url_fallback": "https://base-rpc.publicnode.com",
     "explorer_url": "https://basescan.org",
     "explorer_api": "https://api.basescan.org/api"
   },
@@ -35,6 +36,7 @@
     "chain_id": 42161,
     "native_currency": "ETH",
     "rpc_url": "https://arbitrum.drpc.org",
+    "rpc_url_fallback": "https://arbitrum-one.publicnode.com",
     "explorer_url": "https://arbiscan.io",
     "explorer_api": "https://api.arbiscan.io/api"
   },
@@ -44,6 +46,7 @@
     "chain_id": 421614,
     "native_currency": "ETH",
     "rpc_url": "https://sepolia-rollup.arbitrum.io/rpc",
+    "rpc_url_fallback": "https://arbitrum-sepolia.publicnode.com",
     "explorer_url": "https://sepolia.arbiscan.io",
     "explorer_api": "https://api-sepolia.arbiscan.io/api"
   },
@@ -63,6 +66,7 @@
     "chain_id": 534352,
     "native_currency": "ETH",
     "rpc_url": "https://rpc.scroll.io",
+    "rpc_url_fallback": "https://scroll.publicnode.com",
     "explorer_url": "https://scrollscan.com",
     "explorer_api": "https://api.scrollscan.com/api"
   },
@@ -72,6 +76,7 @@
     "chain_id": 98866,
     "native_currency": "PLUME",
     "rpc_url": "https://rpc.plume.org",
+    "rpc_url_fallback": "https://rpc.plume.org",
     "explorer_url": "https://explorer.plume.org",
     "explorer_api": "https://explorer.plume.org/api"
   },
@@ -81,9 +86,10 @@
     "chain_id": 9745,
     "native_currency": "XPL",
     "rpc_url": "https://rpc.plasma.to",
+    "rpc_url_fallback": "https://rpc.plasma.to",
     "explorer_url": "https://plasmascan.to",
     "explorer_api": null,
-    "notes": "PlasmaScan indique des endpoints 'etherscan-like', mais accès parfois restreint (403)."
+    "notes": "Fallback = même RPC (pas d'autre public stable connu)."
   },
   "etherlink": {
     "name": "Etherlink Mainnet",
@@ -91,6 +97,7 @@
     "chain_id": 42793,
     "native_currency": "XTZ",
     "rpc_url": "https://node.mainnet.etherlink.com",
+    "rpc_url_fallback": "https://node.mainnet.etherlink.com",
     "explorer_url": "https://explorer.etherlink.com",
     "explorer_api": "https://explorer.etherlink.com/api"
   },
@@ -100,6 +107,7 @@
     "chain_id": 23294,
     "native_currency": "ROSE",
     "rpc_url": "https://sapphire.oasis.io",
+    "rpc_url_fallback": "https://sapphire.oasis.io",
     "explorer_url": "https://explorer.oasis.io/mainnet/sapphire",
     "explorer_api": null
   },
@@ -109,9 +117,9 @@
     "chain_id": 30,
     "native_currency": "RBTC",
     "rpc_url": "https://mycrypto.rsk.co",
+    "rpc_url_fallback": "https://public-node.rsk.co",
     "explorer_url": "https://explorer.rootstock.io",
-    "explorer_api": null,
-    "notes": "Si tu utilises Blockscout côté Rootstock, tu pourras mettre explorer_api=https://explorer.rootstock.io/api."
+    "explorer_api": null
   },
   "hyperevm": {
     "name": "HyperEVM (Hyperliquid)",
@@ -119,6 +127,7 @@
     "chain_id": 999,
     "native_currency": "HYPE",
     "rpc_url": "https://rpc.hyperliquid.xyz/evm",
+    "rpc_url_fallback": "https://rpc.hyperliquid.xyz/evm",
     "explorer_url": "https://hyperevmscan.io",
     "explorer_api": null
   },
@@ -128,6 +137,7 @@
     "chain_id": 16661,
     "native_currency": "0G",
     "rpc_url": "https://evmrpc.0g.ai",
+    "rpc_url_fallback": "https://evmrpc.0g.ai",
     "explorer_url": "https://chainscan.0g.ai",
     "explorer_api": null
   },
@@ -137,6 +147,7 @@
     "chain_id": 1440000,
     "native_currency": "XRP",
     "rpc_url": "https://rpc.xrplevm.org",
+    "rpc_url_fallback": "https://rpc.xrplevm.org",
     "explorer_url": "https://explorer.xrplevm.org",
     "explorer_api": "https://explorer.xrplevm.org/api"
   },
@@ -146,6 +157,7 @@
     "chain_id": 239,
     "native_currency": "TAC",
     "rpc_url": "https://rpc.tac.build",
+    "rpc_url_fallback": "https://rpc.tac.build",
     "explorer_url": "https://explorer.tac.build",
     "explorer_api": null
   },
@@ -155,9 +167,9 @@
     "chain_id": 2390,
     "native_currency": "TAC",
     "rpc_url": "https://turin.rpc.tac.build",
+    "rpc_url_fallback": "https://turin.rpc.tac.build",
     "explorer_url": "https://turin.explorer.tac.build",
-    "explorer_api": null,
-    "notes": "Les docs TAC indiquent que Turin est déprécié."
+    "explorer_api": null
   },
   "katana": {
     "name": "Katana",
@@ -175,6 +187,7 @@
     "chain_id": 143,
     "native_currency": "MON",
     "rpc_url": "https://rpc.monad.xyz",
+    "rpc_url_fallback": "https://rpc.monad.xyz",
     "explorer_url": "https://monadscan.com",
     "explorer_api": null
   }
